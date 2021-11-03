@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <SolutionChecks>        
+        <add name="Solution1" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Repository_Over_Data_Quota.md" 
+            condition1 = "##[error]Git lfs fetch failed with exit code: 2. Git lfs logs returned with exit code: 0." 
+            condition2="This repository is over its data quota." />
+        <add name="Solution2" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Expiring_Daemon_because_JVM_heap_space_is_exhausted.md"
+            condition1 = "android/gradlew failed with return code:  1" 
+            condition2="Expiring Daemon because JVM heap space is exhausted" />
+        <add name="Solution3" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/IPA_processing_failed.md"
+            condition1 = "##[error]Error: /usr/bin/xcodebuild failed with return code: 70" 
+            condition2="UserInfo={NSLocalizedDescription=IPA processing failed}" />
+        <add name="Solution4" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Unable_To_Find_Package.md"
+            condition1 = "##[error]The nuget command failed with exit code(1) and error(NU1101: Unable to find package *******. No packages exist with this id in source(s): NuGetOrg" />   
+        <add name="Solution5" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Not_found_PathtoPublish.md"
+            condition1 = "##[error]Publishing build artifacts failed with an error: Not found PathtoPublish: d:\a\1\a\Symbols" />         
+        <add name="Solution6" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Failed_to_publish_to_store.md"
+            condition1 = "##[error]You are attempting to distribute an Application that has a lower versionCode than what is currently in the Google Playstore." />
+        <add name="Solution7" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/The_server_SSH_fingerprint_failed_to_verify.md" 
+           condition1="##[error]Error: /usr/bin/xcodebuild failed with return code: 74" 
+           condition2="xcodebuild: error: Could not resolve package dependencies:"
+           condition3="The server SSH fingerprint failed to verify." />
+      <add name="Solution8" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Authentication_failed_because_no_credentials_were_provided.md"
+           condition1="##[error]Error: /usr/bin/xcodebuild failed with return code: 74"
+           condition2="xcodebuild: error: Could not resolve package dependencies:"
+           condition3="Authentication failed because no credentials were provided."
+           condition4="Fetching https:"/>
+        <add name="Solution9" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Not_found_PathtoPublish.md" 
+           condition1="##[error]Publishing build artifacts failed with an error: Not found PathtoPublish"
+           condition2="1/a/build" />
+        <add name="Solution10" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/keystore_could_not_be_found.md"
+           condition1="error XA4310: $(AndroidSigningKeyStore) file" 
+           condition2="keystore` could not be found"  />
+        <add name="Solution10" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/SigningCertificatePublisherMismatch.md"
+           condition1="##[warning]" 
+           condition2="Microsoft.AppXPackage.Targets"
+           condition3="Publisher name"
+           condition4="does not match signing certificate subject"
+           condition5="Updating Publisher name" />
+        <add name="Solution11" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Release_Notes_should_contain.md"
+           condition1="Failed to publish to store" 
+           condition2="Release Notes should contain" />
+        <add name="Solution12" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/command_not_found.md"
+           condition1="command not found" 
+           condition2="##[error]The process '/bin/bash' failed with exit code 2" />
+        <add name="Solution14" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Could_not_determine_API_level_for_$TargetFrameworkVersion_of_v12.0.md"
+           condition1="error XA0000: Could not determine API level for $(TargetFrameworkVersion)" 
+           condition2="Found Java SDK version 1.8.0" />
+        <add name="Solution15" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Distribution_Store_does_not_exist.md"
+           condition1="bad_request" 
+           condition2="Distribution Store with id"
+           condition3="does not exist" />
+        <add name="Solution16" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/java.util.zip.ZipException_invalid_entry_compressed_size.md"
+           condition1="java.util.zip.ZipException: invalid entry compressed size" 
+           condition2="##[error]Error: /usr/bin/jarsigner failed with return code: 1" />
+        <add name="Solution17" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Operation_was_canceled.md"
+           condition1="##[error]The operation was canceled" />
+        <add name="Solution18" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Require_Provisioning_Profile.md"
+           condition1="Code Signing Error" 
+           condition2="requires a provisioning profile"
+           condition3="Select a provisioning profile in the Signing" />    
+        <add name="Solution19" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Require_Provisioning_Profile.md"
+           condition1="error: /Users/runner/runners" 
+           condition2="unable to open file"
+           condition3="in project"
+           condition4="Downloading task: CocoaPods" />
+        <add name="Solution20" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Xcode_couldn't_find_any_provisioning_profiles_matching.md"
+           condition1="error: No profile for team" 
+           condition2="matching found: Xcode couldn't find any provisioning profiles matching"
+           condition3="** ARCHIVE FAILED **" />            
+    </SolutionChecks>
+</configuration>
