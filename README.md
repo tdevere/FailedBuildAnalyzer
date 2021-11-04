@@ -4,7 +4,7 @@
 
 The purpose of this script is to quickly analyze build logs for text hints which we use to guide uses to known useful content. Ideally, only solutions which can be determined by text analysis only will be part of this effort in the initial stage.
 
-[FailedBuildAnalyzer.ps](/FailedBuildAnalyzer.ps1) is the starting point of the analyzer. To use this script, you need to supply the following parameter:
+[FailedBuildAnalyzer.ps1](/FailedBuildAnalyzer.ps1) is the starting point of the analyzer. To use this script, you need to supply the following parameter:
 * `BuildLogPath` - the complete path to an existing build log which needs analysis. This can be the complete build log or a partial log. If a partial log is used, some scripts may be useless. Try to use the full log file as a general recommendation. 
 
 The master script assumes the working directory will contain a file "Solutions.xml". The script is designed to scan build logs for a set of text conditions found within that file. If all the conditions are met, then we reflect that in a log file which is generated from executing the script. You should have the following information read to update the solutions.xml file:
@@ -43,4 +43,3 @@ Build Log Analyzer Initialized @
 
 * If your case isn't met from conditional text matching but nevertheless can be detected from script analysis, propose a standalone script for review
 * We can extend our current script design to include a new attribute "executeScript" and point to these scenarios with little impact to the existing script process
-* Last note, please try to do the script update if you are also added new Wiki content to keep the two in sync
