@@ -129,7 +129,7 @@ Function StartWork
 				#If we match to the number of found solutions, we're game
 				if ($SolutionCounter -eq $SolutionsFoundCounter)
 				{
-					$msg = [string]::Format("Issue Found!!! Please visit the following article to examine possible solutions:{0}", $solutionURL)
+					$msg = [string]::Format("##[error]Error: Issue Found!!! Please visit the following article to examine possible solutions:{0}", $solutionURL)
 					WriteToResultsLog $msg					
 				}
 				
