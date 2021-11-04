@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this script is to quickly analyze build logs for text hints which we use to guide uses to known useful content. Ideally, only solutions which can be determined by text analysis only will be part of this effort in the initial stage.
+The purpose of this script is to quickly analyze build logs for text hints which we use to guide users to known useful content. Initial only solutions which can be determined by text analysis will be part of this effort.
 
 [FailedBuildAnalyzer.ps1](/FailedBuildAnalyzer.ps1) is the starting point of the analyzer. To use this script, you need to supply the following parameter:
 * `BuildLogPath` - the complete path to an existing build log which needs analysis. This can be the complete build log or a partial log. If a partial log is used, some scripts may be useless. Try to use the full log file as a general recommendation. 
