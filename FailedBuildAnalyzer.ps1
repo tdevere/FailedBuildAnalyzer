@@ -129,8 +129,9 @@ Function StartWork
 				#If we match to the number of found solutions, we're game
 				if ($SolutionCounter -eq $SolutionsFoundCounter)
 				{
-					$msg = [string]::Format("##[error]Error: Issue Found!!! Please visit the following article to examine possible solutions:{0}", $solutionURL)
-					WriteToResultsLog $msg					
+					$msg = [string]::Format("##vso[task.logissue type=warning] Issue Found!!! Please visit the following article to examine possible solutions:{0}", $solutionURL)					
+					WriteToResultsLog $msg
+					Write-Host "##vso[task.logissue type=warning]Issue Was Found See Solution"
 				}
 				
 			}
