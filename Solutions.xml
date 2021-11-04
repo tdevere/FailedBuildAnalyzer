@@ -44,8 +44,7 @@
            condition1="command not found" 
            condition2="##[error]The process '/bin/bash' failed with exit code 2" />
         <add name="Solution14" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Could_not_determine_API_level_for_$TargetFrameworkVersion_of_v12.0.md"
-           condition1="error XA0000: Could not determine API level for $(TargetFrameworkVersion)" 
-           condition2="Found Java SDK version 1.8.0" />
+           condition1="error XA0000: Could not determine API level for $(TargetFrameworkVersion)" />
         <add name="Solution15" solutionUrl="https://github.com/tdevere/AppCenterSupportDocs/blob/main/Build/Distribution_Store_does_not_exist.md"
            condition1="bad_request" 
            condition2="Distribution Store with id"
